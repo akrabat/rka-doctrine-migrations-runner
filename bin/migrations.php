@@ -19,8 +19,6 @@ if (file_exists('migrations-db.php')) {
         );
     }
     $connection = \Doctrine\DBAL\DriverManager::getConnection($params);
-    $dbPlatform = $connection->getDatabasePlatform();
-    $dbPlatform->registerDoctrineTypeMapping('bit', 'boolean');
 } else {
     throw new \InvalidArgumentException(
         'You have to specify a --db-configuration file or pass a Database Connection as a dependency to the Migrations.'
