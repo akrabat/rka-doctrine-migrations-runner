@@ -1,0 +1,26 @@
+{
+    "name": "akrabat/rka-doctrine-migrations-runner",
+    "description": "Standalone runner for Doctrine Migrations",
+    "keywords": [
+        "database", "migrations", "doctrine"
+    ],
+    "homepage": "http://github.com/akrabat/rka-doctrine-migrations-runner",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Rob Allen",
+            "email": "rob@akrabat.com",
+            "homepage": "http://akrabat.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/console": "^2.5",
+        "symfony/yaml": "^2.6",
+        "doctrine/migrations": "dev-master"
+    },
+    "bin": [
+        "bin/migrations.php"
+    ]
+}
