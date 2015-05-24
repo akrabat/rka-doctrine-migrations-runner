@@ -28,7 +28,7 @@ if (file_exists('migrations-db.php')) {
 }
 
 // Instantiate console application
-$cli = new Console\Application('Doctrine Migrations', MigrationsVersion::VERSION);
+$cli = new Console\Application('Doctrine Migrations', MigrationsVersion::VERSION());
 $cli->setCatchExceptions(true);
 
 $helperSet = new Console\Helper\HelperSet();
