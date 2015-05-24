@@ -8,10 +8,7 @@ use Doctrine\DBAL\Migrations\MigrationsVersion;
 use Doctrine\DBAL\Migrations\Tools\Console\Command as MigrationsCommand;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
 
-require (__DIR__ . '/../vendor/autoload.php');
-
-// Set current directory to application root so we can find config files
-chdir(__DIR__ . '/..');
+require ('vendor/autoload.php');
 
 // Create the database connection and set up bit for boolean mapping
 if (file_exists('migrations-db.php')) {
