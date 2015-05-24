@@ -8,8 +8,10 @@ docrine/migrations[1] without any framework integration.
 
 ## Installation
 
-    composer require akrabat/rka-doctrine-migrations-runner
+    $ composer require akrabat/rka-doctrine-migrations-runner
+    $ composer require doctrine/migrations:dev-master
 
+(We need to explictly require doctrine/migrations as that project hasn't yet published a stable version)
 
 ## Usage
 
